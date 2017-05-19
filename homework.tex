@@ -1,5 +1,9 @@
 \documentclass{article}
 
+\usepackage[utf8x]{inputenc}
+\usepackage[english,hebrew]{babel}
+\selectlanguage{hebrew}
+
 \usepackage{fancyhdr}
 \usepackage{extramarks}
 \usepackage{amsmath}
@@ -39,14 +43,14 @@
 %
 
 \newcommand{\enterProblemHeader}[1]{
-    \nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
-    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \nobreak\extramarks{}{שאלה \arabic{#1} continued on next page\ldots}\nobreak{}
+    \nobreak\extramarks{שאלה \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
 }
 
 \newcommand{\exitProblemHeader}[1]{
-    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \nobreak\extramarks{שאלה \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
     \stepcounter{#1}
-    \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+    \nobreak\extramarks{שאלה \arabic{#1}}{}\nobreak{}
 }
 
 \setcounter{secnumdepth}{0}
@@ -67,7 +71,7 @@
     \ifnum#1>0
         \setcounter{homeworkProblemCounter}{#1}
     \fi
-    \section{Problem \arabic{homeworkProblemCounter}}
+    \section{שאלה \arabic{homeworkProblemCounter}}
     \setcounter{partCounter}{1}
     \enterProblemHeader{homeworkProblemCounter}
 }{
@@ -81,9 +85,9 @@
 %   - Author
 %
 
-\newcommand{\hmwkTitle}{Homework\ \#2}
-\newcommand{\hmwkClass}{Calculus}
-\newcommand{\hmwkAuthorName}{\textbf{Josh Davis}}
+\newcommand{\hmwkTitle}{ממ''ן 41}
+\newcommand{\hmwkClass}{חשבון אינפיניטסימלי 1}
+\newcommand{\hmwkAuthorName}{\textbf{יבגני טריפונטוב}}
 
 
 \author{\hmwkAuthorName}
@@ -119,11 +123,56 @@
 \begin{document}
 
 \begin{homeworkProblem}
-    \begin{enumerate}
-        \item \(f(n) = n^2 + n + 1\), \(g(n) = 2n^3\)
-        \item \(f(n) = n\sqrt{n} + n^2\), \(g(n) = n^2\)
-        \item \(f(n) = n^2 - n + 1\), \(g(n) = n^2 / 2\)
-    \end{enumerate}
+\subsection{א}
+
+מצאו את תחום ההגדרה של פונקציה $f(x) = \sqrt{tan(x) - 1}$
+\subsubsection{פתרון}
+\begin{displaymath}
+tan(x) - 1 \geq 0
+
+\end{displaymath}
+
 \end{homeworkProblem}
 
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
