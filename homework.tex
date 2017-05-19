@@ -6,8 +6,6 @@
 \usepackage{amsthm}
 \usepackage{amsfonts}
 \usepackage{tikz}
-\usepackage[plain]{algorithm}
-\usepackage{algpseudocode}
 
 \usetikzlibrary{automata,positioning}
 
@@ -282,24 +280,6 @@
     Therefore on state \(q_0\) or (\(x \mod 5 = 0\)), a transition line should
     go to state \(q_0\) for the input 0 and a line should go to state \(q_1\)
     for input 1. Continuing this gives us the Figure~\ref{fig:multiple5}.
-\end{homeworkProblem}
-
-\begin{homeworkProblem}
-    Write part of \alg{Quick-Sort($list, start, end$)}
-
-    \begin{algorithm}[]
-        \begin{algorithmic}[1]
-            \Function{Quick-Sort}{$list, start, end$}
-                \If{$start \geq end$}
-                    \State{} \Return{}
-                \EndIf{}
-                \State{} $mid \gets \Call{Partition}{list, start, end}$
-                \State{} \Call{Quick-Sort}{$list, start, mid - 1$}
-                \State{} \Call{Quick-Sort}{$list, mid + 1, end$}
-            \EndFunction{}
-        \end{algorithmic}
-        \caption{Start of QuickSort}
-    \end{algorithm}
 \end{homeworkProblem}
 
 \pagebreak
